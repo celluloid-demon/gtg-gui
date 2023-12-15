@@ -78,6 +78,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows
 
 # *** custom ***
-tmp/local/share/gtg/*
-tmp/config/gtg/*
-tmp/cache/gtg/*
+tmp

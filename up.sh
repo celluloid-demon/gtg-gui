@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# WARNING: Might need to run 'xhost +' before startup, and 'xhost -' after spindown.
-
 # WARNING: The gui application in this container *might* enjoy best being spun down by down.sh (rather than quitting the window itself from alt-f4)
 
 # WARNING: This container has issues spinning up sometimes? Could be a host dbus thing. Running up.sh a couple times usually spins it up (mebbe add a wait period in up.sh?).
@@ -15,6 +13,7 @@ mkdir -p ./tmp/local/share/gtg
 mkdir -p ./tmp/config/gtg
 mkdir -p ./tmp/cache/gtg
 
+# todo check out that how-to geek article for securing xhost
 xhost +
 
 # Start docker service
