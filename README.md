@@ -4,8 +4,9 @@ Trying to get Getting Things GNOME gui to run from a docker container (flatpak c
 
 ## How to use:
 
-1. run `up.sh`
+1. Create $HOME/Documents/GTG/tmp, symlink to newly-created `tmp` from project root.
+2. Run `up.sh`
 
 ## Additional Notes
 
-- if the newly-created container immediately spins down, there was probably an errant segfault that hasn't been addressed, but could be investigated through docker logs for the container. hit `up.sh` a few times and it should run.
+- If the newly-created container immediately spins down (read: the GTG application window doesn't even pop up), there was probably an errant segfault that hasn't been addressed, but could be investigated through docker logs for the container. Hit `up.sh` a few times and it should run.
